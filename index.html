@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Page</title>
     <link rel="stylesheet" href="styles.css">
+
+    
 </head>
 <body>
 
@@ -54,10 +56,39 @@
         </div>
         
         <div class="container">
-            <div class="main">main</div>
+            <div id="main">
+                <h3>My Projects</h3>
+                
+
+            </div>
             <div class="side">side</div>
         </div>
     </div>
 
+
+    <script>
+        let cards= document.getElementById("main");
+        
+        dummyText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ";
+        
+
+        for (i=0; i<=7; i++) {
+
+            let oneCard = document.createElement("div");
+            header = document.createElement("h4");
+            text = document.createElement("p");
+
+            header.textContent = "I'm here!";
+            text.textContent = dummyText;
+             
+
+            oneCard.appendChild (header);
+            oneCard.appendChild (text);
+            oneCard.classList = ("card");
+            cards.appendChild(oneCard);
+
+        }
+
+    </script>
 </body>
 </html>
