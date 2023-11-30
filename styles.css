@@ -201,3 +201,9 @@ button:hover {
     padding: 10px;
     box-shadow: 2px 2px 4px 1px rgb(187, 187, 187);
 }
+
+
+
+#footer {
+    text-align: center;
+}
